@@ -1,0 +1,26 @@
+.products-row {
+  display: flex;
+  justify-content: space-between;
+  margin: auto;
+  width: 100%;
+}
+
+.section-title {
+  color: white;
+  margin: 30px auto 0 auto;
+  text-shadow: 0px 0px 10px black;
+}
+
+@media (max-width: 1300px) {
+  .products-row {
+    flex-direction: column;
+    padding-bottom: 30px;
+  }
+}
+
+@media (max-width: 425px) {
+  .section-title {
+    font-size: 7vw;
+    text-align: center;
+  }
+}

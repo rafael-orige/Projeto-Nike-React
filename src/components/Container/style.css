@@ -1,0 +1,15 @@
+.container {
+  max-width: 1500px;
+  margin: auto;
+  min-height: 100vh;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  font-family: "Roboto";
+}
+
+@media (max-width: 1500px) {
+  .container {
+    margin: 0 15px;
+  }
+}

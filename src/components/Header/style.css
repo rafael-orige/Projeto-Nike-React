@@ -1,0 +1,86 @@
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 100px;
+}
+
+.logo {
+  position: relative;
+  width: 100px;
+  filter: invert(1) drop-shadow(0px 0px 10px black);
+  cursor: pointer;
+}
+
+ul {
+  color: white;
+  display: flex;
+  list-style-type: none;
+  justify-content: space-between;
+  width: 500px;
+  text-transform: uppercase;
+  font-family: "Roboto";
+  font-size: 19px;
+  text-shadow: 0px 0px 10px black;
+  font-weight: 700;
+}
+
+ul li {
+  cursor: pointer;
+}
+
+.link {
+  text-decoration: none;
+  color: inherit;
+}
+
+.menu-responsive {
+  position: relative;
+  display: none;
+  cursor: pointer;
+}
+
+.menu-wrapper {
+  transition: all ease-in 0.5s;
+}
+
+.menu-wrapper div {
+  width: 25px;
+  height: 2px;
+  background-color: white;
+  margin-bottom: 7px;
+  box-shadow: 0px 0px 10px black;
+}
+
+.menu-responsive nav {
+  display: none;
+  position: fixed;
+  top: 0;
+  height: 100vh;
+  overflow: hidden;
+  background-color: rgba(23, 25, 29, 0.9);
+  transition: all ease-in 0.5s;
+}
+
+.menu-responsive nav ul {
+  flex-direction: column;
+  line-break: auto;
+}
+
+.menu-responsive nav ul li {
+  margin-bottom: 30px;
+}
+
+@media (max-width: 850px) {
+  nav {
+    display: none;
+  }
+
+  .menu-responsive {
+    display: block;
+  }
+
+  .menu-responsive nav {
+    display: block;
+  }
+}
